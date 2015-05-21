@@ -1,8 +1,4 @@
 # Desafio
-
-
-
-
 ```javascript
 //Escrever classe JS para o código
 	
@@ -15,11 +11,9 @@ var r1 = new Rodolfo();
 ```
 
 
-
 ### Solução apresentada
 
 ```javascript
-
 // Class.js
 
 function Person(){
@@ -73,4 +67,54 @@ var r1 = new Rodolfo();
   let r1 = new Rodolfo();
       r1.speak1(); //speak1
 })();
+```
+
+============
+
+### Exemplo de Classe com outra situação
+
+```javascript
+// Repository.es6
+
+(function(){
+  'use strict';
+  
+  class Repository {
+    constructor(name, author, date) {
+      this.name = name;
+      this.author = author;
+      this.date = date;
+    };
+
+    getName(){
+      return this.name;
+    };
+
+    getAuthor(){
+      return this.author;
+    };
+
+    getDate(){
+      return this.date;
+    };
+  };
+
+  class GithubProjetc extends Repository {
+    constructor(name, author, date) {
+      super(name, author, date);
+    };
+
+    getProjectData(){
+      return this;
+    };
+  };
+
+  let project = new GithubProjetc('Liferay-Test', 'Rodolfo Dias', 'may 2015');
+
+  console.log(project.getName()) // get project name
+  console.log(project.getAuthor()) // get project author
+  console.log(project.getDate()) // get project date
+  console.log(project.getProjectData()) // get all data from the project
+})();
+
 ```
