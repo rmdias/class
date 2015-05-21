@@ -1,4 +1,8 @@
 # Desafio
+
+
+
+
 ```javascript
 //Escrever classe JS para o código
 	
@@ -10,7 +14,10 @@ var r1 = new Rodolfo();
 	r1.speak2(); // ‘speak2’
 ```
 
+
+
 ### Solução apresentada
+
 ```javascript
 
 // Class.js
@@ -36,4 +43,34 @@ var p1 = new Person();
 var r1 = new Rodolfo();
     r1.speak1();
     r1.speak2(); 
+```
+
+
+### Solução com ES6
+
+```javascript
+// Person.es6
+
+(function(){
+  'use strict';
+
+  class Person {
+    speak1(){
+      console.log('speak1');
+    };
+  };
+
+  class Rodolfo extends Person {
+    constructor(){
+      super();
+    };
+
+    speak2() {
+      console.log('speak2');
+    };
+  }
+
+  let r1 = new Rodolfo();
+      r1.speak1(); //speak1
+})();
 ```
