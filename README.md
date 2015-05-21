@@ -113,7 +113,7 @@ var r1 = new Rodolfo();
     };
   };
 
-  let project = new GithubProjetc('Liferay-Test', 'Rodolfo Dias', 'may 2015');
+  let project = new GithubProjetc('Liferay-Application', 'Rodolfo Dias', 'may 2015');
 
   console.log(project.getName()) // get project name
   console.log(project.getAuthor()) // get project author
