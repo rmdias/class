@@ -56,12 +56,12 @@ var r1 = new Rodolfo();
 
   class Rodolfo extends Person {
     constructor(){
-      super();
+      super(); // herdando parametros de `Person`
     };
 
     speak2() {
       console.log('speak2');
-    };
+    }
   }
 
   let r1 = new Rodolfo();
@@ -78,7 +78,7 @@ var r1 = new Rodolfo();
 
 (function(){
   'use strict';
-  
+
   class Repository {
     constructor(name, author, date) {
       this.name = name;
@@ -101,7 +101,7 @@ var r1 = new Rodolfo();
 
   class GithubProjetc extends Repository {
     constructor(name, author, date) {
-      super(name, author, date);
+      super(name, author, date); // herdando parametros de `Repository`
     };
 
     getProjectData(){
