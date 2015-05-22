@@ -44,7 +44,7 @@ var r1 = new Rodolfo();
 ```
 
 
-### Solução com ES6
+### Solução com ES2015
 
 ```javascript
 // Person.es6
